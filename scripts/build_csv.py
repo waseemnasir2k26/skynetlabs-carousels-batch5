@@ -146,16 +146,26 @@ assert len(HEADER_ROW_2) == 39, f"Row2 has {len(HEADER_ROW_2)} cols, need 39"
 
 
 def title_slug(title: str) -> str:
-    return "".join(
-        ch if ch.isalnum() or ch in "-$" else "-"
-        for ch in title.lower().replace(" ", "-")
-    ).replace("--", "-").strip("-")
+    """Must match generator.py slug() exactly."""
+    return (title.lower()
+            .replace(" ", "-")
+            .replace("\u2014", "-")   # em dash
+            .replace("/", "-")
+            .replace(",", "")
+            .replace("'", "")
+            .replace("\u2019", "")    # right single quote
+            .replace(".", "")
+            .replace("(", "")
+            .replace(")", ""))[:60]
 
 
 def slide_urls_for(carousel_id: int, title: str, num_slides: int) -> list:
+    from urllib.parse import quote
     folder = f"{carousel_id:02d}_{title_slug(title)}"
+    # URL-encode folder name so chars like % become %25 (GitHub raw requires it)
+    safe_folder = quote(folder, safe="-_.$")
     return [
-        f"{REPO_RAW_URL}/slides/{folder}/slide_{i:02d}.png"
+        f"{REPO_RAW_URL}/slides/{safe_folder}/slide_{i:02d}.png"
         for i in range(1, num_slides + 1)
     ]
 

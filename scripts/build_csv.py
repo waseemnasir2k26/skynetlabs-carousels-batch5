@@ -201,9 +201,11 @@ def build_row(carousel: dict, caption: dict, when: datetime) -> list:
     hashtags_line = " ".join(caption["hashtags"])
     body = f"{caption['caption']}\n\n{hashtags_line}"
 
-    # Image URLs: all slides, comma-separated
+    # Image URL: hook slide only (GHL CSV parser breaks on multiple
+    # comma-separated URLs inside a quoted field — treats internal commas
+    # as column separators, shifting all columns right and losing media)
     urls = slide_urls_for(cid, title, num_slides)
-    image_urls_csv = ",".join(urls)
+    image_urls_csv = urls[0]  # slide_01 = hook slide
 
     # LinkedIn PDF title — what shows in the document post header
     pdf_title = f"{title} — {subtitle}" if subtitle else title
@@ -223,7 +225,7 @@ def build_row(carousel: dict, caption: dict, when: datetime) -> list:
         when.strftime("%Y-%m-%d %H:%M:%S"),    # 1  postAtSpecificTime
         body,                                   # 2  content
         "",                                     # 3  OGmetaUrl
-        image_urls_csv,                         # 4  imageUrls (all slides)
+        image_urls_csv,                         # 4  imageUrls (hook slide)
         "",                                     # 5  gifUrl
         "",                                     # 6  videoUrls
         "TRUE",                                 # 7  mediaOptimization

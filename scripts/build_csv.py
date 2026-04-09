@@ -233,10 +233,10 @@ def build_row(carousel: dict, caption: dict, when: datetime) -> list:
         CATEGORY_TAGS[cat],                     # 9  tags
         CATEGORY_LABELS[cat],                   # 10 category
         first_comment,                          # 11 followUpComment (interactive)
-        "post",                                 # 12 FB type
+        "",                                     # 12 FB type (skip — already in prev CSV)
         "post",                                 # 13 IG type
-        pdf_title,                              # 14 LinkedIn pdfTitle
-        "TRUE",                                 # 15 LinkedIn postAsPdf
+        "",                                     # 14 LinkedIn pdfTitle (skip — already in prev CSV)
+        "FALSE",                                # 15 LinkedIn postAsPdf (skip)
         "",                                     # 16 GBP eventType
         "",                                     # 17 GBP actionType
         "",                                     # 18 GBP title
@@ -317,7 +317,7 @@ def main():
         cap = caps_by_id[carousel["id"]]
         rows.append(build_row(carousel, cap, when))
 
-    csv_path = OUTPUT_DIR / "ghl-batch5-carousels.csv"
+    csv_path = OUTPUT_DIR / "ghl-batch5-ig-pinterest.csv"
     write_csv(rows, csv_path)
 
     json_path = OUTPUT_DIR / "captions.json"

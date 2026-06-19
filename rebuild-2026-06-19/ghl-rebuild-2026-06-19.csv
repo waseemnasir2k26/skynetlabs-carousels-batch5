@@ -30,14 +30,14 @@ I'm not anti-team. Scaling to multiple verticals? Hire. A partner whose instinct
 What's the role you almost hired for that AI ended up doing better?
 
 #Solopreneur #AIagency #ClaudeAI #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=team","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/team18mo.png","",""
-"2026-06-23 06:00:00","A client asked: ""Can your bot handle French, Arabic and Lingala on WhatsApp, qualify the lead, and route to a human when it spots buying intent?""
+"2026-06-23 06:00:00","A client asked: ""Can your bot handle multiple languages on WhatsApp, qualify the lead, and route to a human when it spots buying intent?""
 
-Three years ago that was a $40K, 3-month build. We shipped it in 5 days.
+What used to be a multi-month, five-figure build — we shipped a working version in one sprint.
 
 The stack:
 → n8n self-hosted on a $15 VPS
 → WhatsApp Cloud API
-→ Claude for the language layer (50+ languages natively, no separate translation step)
+→ Claude for the language layer (handles dozens of languages, no separate translation step)
 → Supabase for state
 
 The detail most builders miss: WhatsApp's 2026 policy bans open-ended ""ask me anything"" bots. So it isn't free chat — it's a 4-question qualify flow. Hot lead → human. Cold → nurture. Wrong number → polite exit.
@@ -47,7 +47,7 @@ If you're not building these for the SMBs in your network, someone else will be.
 #WhatsAppAPI #n8n #ClaudeAI #LeadGen #AIagency","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=whatsapp","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/whatsapp.png","",""
 "2026-06-24 09:30:00","RIP Zapier $2K/mo enterprise plans.
 
-I'm being a little dramatic — Zapier isn't dying, it's a great on-ramp for non-technical operators. But the segment paying $1-3K/mo for 50K+ task workflows is migrating fast. I've talked to four ops directors in 60 days who all ran the same math.
+I'm being a little dramatic — Zapier isn't dying, it's a great on-ramp for non-technical operators. But the segment paying $1-3K/mo for 50K+ task workflows is migrating fast. The operators I've talked to are all running the same math.
 
 What replaces it:
 → n8n self-hosted, $15-30/mo for the VPS
@@ -55,7 +55,7 @@ What replaces it:
 → A weekend rebuilding the 5-10 workflows that handle 80% of the volume
 → Better data residency, better debug surface, better unit economics
 
-The migration script that's worked for me three times:
+The migration script that's worked for me:
 1. List every Zap, sort by tasks/month.
 2. Migrate the top 5 by volume first.
 3. Run them parallel for two weeks. Validate.
@@ -71,7 +71,7 @@ Most ""AI agency"" content sounds identical because the people writing it aren't
 The tells:
 → Builders name the actual tool. Packagers say ""the right AI stack.""
 → Builders show a real workflow with real failure modes. Packagers show a 4-step diagram with vague arrows.
-→ Builders cite a number — 14,200 runs, $0.30 per execution, a 5-day sprint. Packagers say ""10x"" and ""scale.""
+→ Builders cite a number — thousands of runs at pennies per execution, a one-sprint build. Packagers say ""10x"" and ""scale.""
 → Builders post an L on something they shipped. Packagers post a testimonial nobody can verify.
 
 Builder content has a smaller audience and a higher conversion. The DMs come in with technical questions instead of ""how do I get started in AI?""
@@ -101,38 +101,38 @@ What's the move you wish you'd made in your first 30 days?
 #AIagency #Productized #Solopreneur #ClaudeAI #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=restart","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/restart.png","",""
 "2026-06-29 04:30:00","I tried replacing my entire CRM with one Claude agent reading a single markdown file.
 
-It worked beautifully — until 47 active contacts.
+It worked beautifully — until the contacts piled up.
 
 What broke first:
-→ Token economics. By contact 35, every ""what's pending"" query was 40K+ tokens.
-→ Memory drift. With 50+ entries in context, Claude conflated two different contacts named Sarah. Subtle, but every conflation cost trust.
+→ Token economics. As the list grew, every ""what's pending"" query ballooned toward tens of thousands of tokens.
+→ Memory drift. With dozens of entries in context, Claude started conflating two different contacts with similar names. Subtle, but every conflation cost trust.
 → Update integrity. Edit a contact mid-conversation, ask a follow-up, and sometimes Claude reasoned over the pre-edit version.
-→ Search precision. Semantic search is great for ""the lead from real estate."" It's bad at ""the lead with the $850 budget.""
+→ Search precision. Semantic search is great for ""the lead from real estate."" It's bad at ""the lead with the mid-range budget.""
 
 The fix wasn't ""buy a CRM."" It was hybridize:
 → Structured fields (budget, timeline, status) → a Supabase table
 → Long-form notes and context → stayed in markdown
 → Claude reads both via MCP
 
-Now it scales past 100 contacts. The question was never ""AI or database"" — it's ""what's the right shape for each type of data?""
+Now it scales comfortably past where it broke. The question was never ""AI or database"" — it's ""what's the right shape for each type of data?""
 
 What's the failure point you hit first replacing a CRM with AI?
 
 #ClaudeAI #CRM #MCP #DataModeling #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=crm","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/crm.png","",""
 "2026-06-30 06:00:00","Small win. Posting because nobody talks about this.
 
-I'd been paying $97/mo for a SaaS that emailed me a daily digest of LinkedIn hashtags I track. Genuinely useful tool.
+I'd been paying about $100/mo for a SaaS that emailed me a daily digest of LinkedIn hashtags I track. Genuinely useful tool.
 
-Then Claude Routines went GA. I rebuilt the same workflow as a single Routine: scrape 12 hashtags daily at 7am, summarize into 3 themes, email me. Setup: 15 minutes. Cost: included in my $20/mo Max plan. Annual saving: $1,164.
+Then Claude Routines went GA. I rebuilt the same workflow as a single Routine: scrape 12 hashtags daily at 7am, summarize into 3 themes, email me. Setup: about 15 minutes. Cost: included in my $20/mo Max plan. That's roughly a year of subscription saved.
 
 The bigger point: every solo operator has $300-800/mo in SaaS that exists only because there was no scheduling layer on top of an LLM. There is now.
 
 Audit your stack this weekend. For each tool ask: ""is this a database + UI, or a prompt + cron?"" The second category is now a 15-minute Routine. The first stays.
 
-I'm tracking 6 more subs to kill this month.
+I'm eyeing a few more subs to kill this month.
 
 #ClaudeAI #Productivity #SaaS #Solopreneur #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=routine","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/routine97.png","",""
-"2026-07-01 09:30:00","I drew the entire delivery flow that produced 50 public GitHub repos on a single whiteboard. Six nodes.
+"2026-07-01 09:30:00","I drew the entire delivery flow that produced 50+ public GitHub repos on a single whiteboard. Six nodes.
 
 → Node 1: Inbound (Fiverr brief, Upwork RFP, DM, referral)
 → Node 2: Scoping (5-8 written questions, async)
@@ -141,7 +141,7 @@ I'm tracking 6 more subs to kill this month.
 → Node 5: Handoff (deployed URL, repo transfer, 14-day tuning window)
 → Node 6: Referral hook (one message at the end)
 
-The 50 repos exist because Node 4 ran 50 times. No mystery.
+Those repos exist because Node 4 ran again and again. No mystery.
 
 What's interesting is what's NOT on the board:
 → No ""client management"" node — the 5-8 question doc replaces 80% of it.
@@ -155,7 +155,7 @@ How many nodes is your version?
 #AIagency #Productized #Solopreneur #BuildInPublic #ClaudeCode","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=whiteboard","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/whiteboard.png","",""
 "2026-07-02 11:00:00","If you sell websites or automations to clinics, the compliance conversation just got easier — and it's an opening, not a barrier.
 
-I built a Next.js site for a UK Clinical Lead Nurse last month. CQC mapping, GDPR, real first-person voice instead of corporate ""we."" It went up as a speculative demo before the pitch. The pitch landed; we're working through 7 scope questions now.
+I built a Next.js site for a UK Clinical Lead Nurse last month. CQC mapping, GDPR, real first-person voice instead of corporate ""we."" It went up as a speculative demo before the pitch. The pitch landed; we're working through a handful of scope questions now.
 
 What I didn't expect from the niche:
 → Most clinic sites still use stock photos and ""trusted by thousands"" filler. Clinical staff hate it — they tell me directly in scoping calls.

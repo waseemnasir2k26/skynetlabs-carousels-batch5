@@ -1,0 +1,262 @@
+"postAtSpecificTime (YYYY-MM-DD HH:mm:ss)","content","link (OGmetaUrl)","imageUrls","gifUrl","videoUrls"
+"2026-06-20 09:00:00","Everyone wants the ""secret AI stack."" There isn't one. There's just the boring list nobody screenshots.
+
+Here's the whole thing SkynetLabs runs on, under $200/mo:
+
+Claude Code · Cursor · n8n (self-hosted) · GHL · Hostinger · Vercel · Supabase · Resend
+
+That's it. 50+ workflows and 1-2 client builds a week come out of those eight tools. No $2K enterprise seats, no headcount.
+
+The leverage was never the tool. It was deleting everything that wasn't on this list.
+
+What's the one tool you pay for that you could kill this week?
+
+#ClaudeCode #n8n #Solopreneur #AIagency #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=toolstack","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/toolstack.png","",""
+"2026-06-22 04:30:00","I told myself for 18 months that I needed a team.
+
+A junior dev. A designer. A VA. A ""growth person."" A whole org chart for an agency I hadn't built yet.
+
+Then I just started shipping. Here's what actually does the work now:
+
+→ Claude Code does the dev. I review, refine, ship.
+→ Cursor + a saved component library does the design. I taste-check.
+→ n8n + GHL run the inbox triage and the follow-ups.
+→ Subagents do the research, the draft copy, the QA passes.
+
+The role I kept imagining outsourcing? Most of it didn't need a human. The judgment layer — what to build, what to charge, who to say no to — stays with me. Everything else compresses into AI + workflow.
+
+I'm not anti-team. Scaling to multiple verticals? Hire. A partner whose instincts complement yours? Hire. But for the 0-to-$15K-MRR solo stage, the team is a story you tell yourself to delay shipping.
+
+What's the role you almost hired for that AI ended up doing better?
+
+#Solopreneur #AIagency #ClaudeAI #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=team","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/team18mo.png","",""
+"2026-06-23 06:00:00","A client asked: ""Can your bot handle French, Arabic and Lingala on WhatsApp, qualify the lead, and route to a human when it spots buying intent?""
+
+Three years ago that was a $40K, 3-month build. We shipped it in 5 days.
+
+The stack:
+→ n8n self-hosted on a $15 VPS
+→ WhatsApp Cloud API
+→ Claude for the language layer (50+ languages natively, no separate translation step)
+→ Supabase for state
+
+The detail most builders miss: WhatsApp's 2026 policy bans open-ended ""ask me anything"" bots. So it isn't free chat — it's a 4-question qualify flow. Hot lead → human. Cold → nurture. Wrong number → polite exit.
+
+If you're not building these for the SMBs in your network, someone else will be.
+
+#WhatsAppAPI #n8n #ClaudeAI #LeadGen #AIagency","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=whatsapp","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/whatsapp.png","",""
+"2026-06-24 09:30:00","RIP Zapier $2K/mo enterprise plans.
+
+I'm being a little dramatic — Zapier isn't dying, it's a great on-ramp for non-technical operators. But the segment paying $1-3K/mo for 50K+ task workflows is migrating fast. I've talked to four ops directors in 60 days who all ran the same math.
+
+What replaces it:
+→ n8n self-hosted, $15-30/mo for the VPS
+→ Claude API for the AI nodes — pennies per call
+→ A weekend rebuilding the 5-10 workflows that handle 80% of the volume
+→ Better data residency, better debug surface, better unit economics
+
+The migration script that's worked for me three times:
+1. List every Zap, sort by tasks/month.
+2. Migrate the top 5 by volume first.
+3. Run them parallel for two weeks. Validate.
+4. Once stable, cancel Zapier and move the long tail at leisure.
+
+If you've made this switch — what was the first workflow you moved, and what broke?
+
+#Zapier #n8n #Automation #AIagency #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=zapier","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/zapier.png","",""
+"2026-06-25 11:00:00","Builders read this. Packagers will hate it.
+
+Most ""AI agency"" content sounds identical because the people writing it aren't building anything. They're packaging. That's a real job — but when packaging masquerades as building, the content goes shallow and the audience feels it.
+
+The tells:
+→ Builders name the actual tool. Packagers say ""the right AI stack.""
+→ Builders show a real workflow with real failure modes. Packagers show a 4-step diagram with vague arrows.
+→ Builders cite a number — 14,200 runs, $0.30 per execution, a 5-day sprint. Packagers say ""10x"" and ""scale.""
+→ Builders post an L on something they shipped. Packagers post a testimonial nobody can verify.
+
+Builder content has a smaller audience and a higher conversion. The DMs come in with technical questions instead of ""how do I get started in AI?""
+
+If you're a builder, write like one. Specific, opinionated, technical. Your people will engage.
+
+#BuildInPublic #ClaudeAI #Solopreneur #AIagency","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=builders","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/builders.png","",""
+"2026-06-26 06:00:00","If I restarted my agency today, here's what I'd do differently in the first 30 days.
+
+Skip:
+→ Make / Zapier / Pipedream as the primary stack. Great for prototypes, not for a margin-sustainable business in 2026.
+→ Retainer-first pricing. The lock-in feels safe until cash flow tightens and you realize it's just a slower hourly.
+→ Custom proposals. Every one is unpaid sales labor that slows the close.
+→ ""Generalist agency"" positioning. ""Agency"" means nothing to a buyer. ""Specialist"" closes.
+
+Ship:
+→ One productized offer in week one. Fixed scope, fixed price, $1.5-2K.
+→ A working demo of that offer, before the first sales call.
+→ A scoping doc with 5-8 written questions, answered before any call.
+→ A 5-day delivery sprint, 50/50 payment.
+→ A simple referral message at the end of every project.
+
+My first-time mistake was treating the agency like a buffet — five offers, no specialty, slow close. The fix was one productized service and refusing everything else for 90 days.
+
+What's the move you wish you'd made in your first 30 days?
+
+#AIagency #Productized #Solopreneur #ClaudeAI #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=restart","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/restart.png","",""
+"2026-06-29 04:30:00","I tried replacing my entire CRM with one Claude agent reading a single markdown file.
+
+It worked beautifully — until 47 active contacts.
+
+What broke first:
+→ Token economics. By contact 35, every ""what's pending"" query was 40K+ tokens.
+→ Memory drift. With 50+ entries in context, Claude conflated two different contacts named Sarah. Subtle, but every conflation cost trust.
+→ Update integrity. Edit a contact mid-conversation, ask a follow-up, and sometimes Claude reasoned over the pre-edit version.
+→ Search precision. Semantic search is great for ""the lead from real estate."" It's bad at ""the lead with the $850 budget.""
+
+The fix wasn't ""buy a CRM."" It was hybridize:
+→ Structured fields (budget, timeline, status) → a Supabase table
+→ Long-form notes and context → stayed in markdown
+→ Claude reads both via MCP
+
+Now it scales past 100 contacts. The question was never ""AI or database"" — it's ""what's the right shape for each type of data?""
+
+What's the failure point you hit first replacing a CRM with AI?
+
+#ClaudeAI #CRM #MCP #DataModeling #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=crm","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/crm.png","",""
+"2026-06-30 06:00:00","Small win. Posting because nobody talks about this.
+
+I'd been paying $97/mo for a SaaS that emailed me a daily digest of LinkedIn hashtags I track. Genuinely useful tool.
+
+Then Claude Routines went GA. I rebuilt the same workflow as a single Routine: scrape 12 hashtags daily at 7am, summarize into 3 themes, email me. Setup: 15 minutes. Cost: included in my $20/mo Max plan. Annual saving: $1,164.
+
+The bigger point: every solo operator has $300-800/mo in SaaS that exists only because there was no scheduling layer on top of an LLM. There is now.
+
+Audit your stack this weekend. For each tool ask: ""is this a database + UI, or a prompt + cron?"" The second category is now a 15-minute Routine. The first stays.
+
+I'm tracking 6 more subs to kill this month.
+
+#ClaudeAI #Productivity #SaaS #Solopreneur #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=routine","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/routine97.png","",""
+"2026-07-01 09:30:00","I drew the entire delivery flow that produced 50 public GitHub repos on a single whiteboard. Six nodes.
+
+→ Node 1: Inbound (Fiverr brief, Upwork RFP, DM, referral)
+→ Node 2: Scoping (5-8 written questions, async)
+→ Node 3: Spec demo (Vercel preview, sometimes built before the call)
+→ Node 4: Build sprint (Claude Code + Cursor, 3-5 days, daily Loom)
+→ Node 5: Handoff (deployed URL, repo transfer, 14-day tuning window)
+→ Node 6: Referral hook (one message at the end)
+
+The 50 repos exist because Node 4 ran 50 times. No mystery.
+
+What's interesting is what's NOT on the board:
+→ No ""client management"" node — the 5-8 question doc replaces 80% of it.
+→ No ""marketing"" node — referrals + case studies handle inbound. No paid ads.
+→ No ""sales"" node — the spec demo IS the sale.
+
+When the system fits on one board, you can iterate on it. When it spreads across 4 tools and 6 Notion pages, it ossifies.
+
+How many nodes is your version?
+
+#AIagency #Productized #Solopreneur #BuildInPublic #ClaudeCode","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=whiteboard","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/whiteboard.png","",""
+"2026-07-02 11:00:00","If you sell websites or automations to clinics, the compliance conversation just got easier — and it's an opening, not a barrier.
+
+I built a Next.js site for a UK Clinical Lead Nurse last month. CQC mapping, GDPR, real first-person voice instead of corporate ""we."" It went up as a speculative demo before the pitch. The pitch landed; we're working through 7 scope questions now.
+
+What I didn't expect from the niche:
+→ Most clinic sites still use stock photos and ""trusted by thousands"" filler. Clinical staff hate it — they tell me directly in scoping calls.
+→ Inspectors actually look at the website. An owner who knows that values pages mapped to evidence requirements.
+→ Most ""clinic web design"" charges $5-15K for slow CMS builds with no compliance scaffolding.
+
+Three angles that resonate:
+1. ""Your compliance officer can audit this site in 20 minutes.""
+2. ""Real photos of your real staff, with proper consent flows.""
+3. ""Inquiries route to qualified leads, not your front-desk inbox.""
+
+If you know a UK or US clinic owner who needs a real site instead of a template, comment ""CLINIC"" and I'll send the demo + scope.
+
+#Healthcare #ClinicMarketing #NextJS #ComplianceFirst #AIagency","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=clinic","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/clinic.png","",""
+"2026-07-03 06:00:00","I expected Claude Routines to be a toy. A week later, three of my production workflows run on it. Not prototypes — production.
+
+Which ones moved over:
+→ Daily content brief (research news → write the script). 90% of the value was the prompt, not the orchestration.
+→ Weekly competitor scan (read 10 LinkedIn pages → summarize what changed in their offer).
+→ Email triage (read inbox → flag the 3 highest-priority threads with one-line context).
+
+Which ones stayed in n8n:
+→ Anything with branching that depends on output (""if X route to A, if Y route to B"").
+→ Anything touching external webhooks (Stripe, GHL, Calendly).
+→ Anything where the client needs an audit trail of every execution.
+
+The sharp lesson: I was conflating ""the workflow"" with ""the workflow tool."" A real chunk of what I'd built in n8n was just ""I needed a place to schedule a prompt."" Routines is that place now.
+
+What did you assume needed n8n that turned out to be one prompt and a scheduler?
+
+#ClaudeAI #ClaudeRoutines #n8n #Automation #BuildInPublic","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=routines","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/routines.png","",""
+"2026-07-06 06:00:00","Saying the quiet part out loud.
+
+Most ""AI agencies"" on this app are one operator, a laptop, and a Stripe account. No team. No office. No fancy onboarding deck. That's not a bug in the model — that's the whole model.
+
+The labor compression from Claude + n8n + Vercel collapsed the org chart. The 8-person 2018 agency — junior dev, designer, account manager, ops, two seniors, a strategist, a founder — is now one person who can taste, scope, ship, and own the relationship, with AI doing the labor.
+
+Why it's good news:
+→ The barrier to start is under $200/mo and one productized offer.
+→ Margins on a well-priced productized service run 60-80%, sustainable solo.
+→ The work-life model beats VC-backed agency life. Fewer meetings, more shipping.
+
+Why it scares incumbents:
+→ A solo operator can deliver a $5K build for $1.5K at the same quality.
+→ The ""agency moat"" was always headcount and process. AI compressed both.
+
+If you're building, this is the era. Where's this read wrong? Push back specifically.
+
+#AI #AIagency #FutureOfWork #Solopreneur #ClaudeAI","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=90pct","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/90pct.png","",""
+"2026-06-20 13:00:00","Imagine giving Caesar a ChatGPT sub. Rome would've shipped in a weekend. 😂
+
+The AI tools were never the problem. Bad prompts are.
+
+More real takes on AI dev workflow → skynetjoe.com
+
+#vibecode #aicoding #devhumor #ClaudeCode #cursorai #buildinpublic #freelancelife","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=vibecode","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/vibe05.png","",""
+"2026-06-27 13:00:00","I don't read error messages anymore. Paste into Cursor and pray. That's the workflow now. 😭
+
+The AI tools were never the problem. Bad prompts are.
+
+More real takes on AI dev workflow → skynetjoe.com
+
+#vibecode #aicoding #devhumor #ClaudeCode #cursorai #buildinpublic #freelancelife","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=vibecode","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/vibe06.png","",""
+"2026-07-04 13:00:00","If you can't explain it, paste it into ChatGPT. Einstein would be proud, honestly. 🤓
+
+The AI tools were never the problem. Bad prompts are.
+
+More real takes on AI dev workflow → skynetjoe.com
+
+#vibecode #aicoding #devhumor #ClaudeCode #cursorai #buildinpublic #freelancelife","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=vibecode","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/vibe07.png","",""
+"2026-07-11 13:00:00","Told a client the bug was actually ""a feature."" They bought it. 🫠 We are so cooked.
+
+The AI tools were never the problem. Bad prompts are.
+
+More real takes on AI dev workflow → skynetjoe.com
+
+#vibecode #aicoding #devhumor #ClaudeCode #cursorai #buildinpublic #freelancelife","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=vibecode","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/vibe08.png","",""
+"2026-07-18 13:00:00","Went to sleep with an empty repo. Woke up with the MVP done. The agents are earning their keep. 😅
+
+The AI tools were never the problem. Bad prompts are.
+
+More real takes on AI dev workflow → skynetjoe.com
+
+#vibecode #aicoding #devhumor #ClaudeCode #cursorai #buildinpublic #freelancelife","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=vibecode","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/vibe09.png","",""
+"2026-07-25 13:00:00","Everyone laughed at my wrapper app. It's at $10K MRR now. Keep building stupid stuff. 🤣
+
+The AI tools were never the problem. Bad prompts are.
+
+More real takes on AI dev workflow → skynetjoe.com
+
+#vibecode #aicoding #devhumor #ClaudeCode #cursorai #buildinpublic #freelancelife","https://skynetjoe.com?utm_source=ghl&utm_medium=social&utm_campaign=vibecode","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/rebuild-2026-06-19/vibe10.png","",""
+"2026-06-21 14:00:00","I don't edit our reels anymore. I prompt them. 🎬
+
+The bali nomad vlog that scored 90/100 on our critic loop? One prompt. The cinematic sunset reel? One prompt. The client demo promos, the comment-bait magnets, the faceless explainers — all of it starts as a master prompt I paste into Claude Code.
+
+So I wrote down all 17 video-editing skills. Each one is a complete, tested prompt — not theory.
+
+I'm giving away the whole library. Drop your email once, unlock everything, and get every new prompt as we ship it.
+
+Grab all 17 free → skynetjoe.com/edit-videos-with-claude
+
+What would you make first?
+
+#ClaudeCode #VideoEditing #AIvideo #ContentCreation #BuildInPublic","https://skynetjoe.com/edit-videos-with-claude?utm_source=ghl&utm_medium=social&utm_campaign=editvid","https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/editvid-2026-06-19/slide1.png,https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/editvid-2026-06-19/slide2.png,https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/editvid-2026-06-19/slide3.png,https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/editvid-2026-06-19/slide4.png,https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/editvid-2026-06-19/slide5.png,https://raw.githubusercontent.com/waseemnasir2k26/skynetlabs-carousels-batch5/main/editvid-2026-06-19/slide6.png","",""
